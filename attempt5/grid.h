@@ -1,9 +1,19 @@
 #pragma once
 #include <vector>
 
+/*! The grid that the game of life will happen on
+* 
+*/
 class Grid 
 {
 public:
+
+
+	/*! The one and only grid constructor
+	*	@param width the width of the window.
+	*	@param height the height of the window.
+	*	@param cell_size size of one cell in pixels. Minimum size of 2 pixels
+	*/
 	Grid(int width, int height, int cell_size): 
 		rows(height / cell_size),
 		cols(width / cell_size),

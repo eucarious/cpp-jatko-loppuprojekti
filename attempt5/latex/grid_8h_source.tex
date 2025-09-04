@@ -1,0 +1,35 @@
+\doxysection{grid.\+h}
+\hypertarget{grid_8h_source}{}\label{grid_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_grid_a89c065c39df72f0903847c8268d9ed97}{Grid}}\ }
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_grid_a89c065c39df72f0903847c8268d9ed97}{Grid}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keywordtype}{int}\ cell\_size):\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ rows(height\ /\ cell\_size),}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ cols(width\ /\ cell\_size),}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ cell\_size(cell\_size),}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ cells(rows,\ std::vector<bool>(cols,\ 0))\ \{\};\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_grid_aa55979d0fc9087c65e497453e1e861bc}{Draw}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_grid_a01699254464c2bc5c7acd3090b7c689b}{GetRows}}();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_grid_a8789a5896cc715422ab70786f179dbdd}{GetCols}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_grid_ab6fcfa4af09bf335f241b623b86ede1f}{SetStatus}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ col,\ \textcolor{keywordtype}{bool}\ status);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_grid_a6cebf0190af65de6aafc70ba212e3ccf}{GetStatus}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ col);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_grid_a9b8c3f760c3cdbda975ca8665ac1abe3}{IsInBounds}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ col);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_grid_a7250168f79876cf7fc62944978bdf790}{RandomStart}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ rows,\ cols,\ cell\_size;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<std::vector<bool>>\ cells;}
+\DoxyCodeLine{00040\ \};}
+
+\end{DoxyCode}
