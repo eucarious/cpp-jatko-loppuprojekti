@@ -19,8 +19,8 @@
 
 int main() {
 
-	const int WINDOW_WIDTH = 600; /*! Width of the window. */
-	const int WINDOW_HEIGHT = 600; /*! Height of the window. */
+	const int WINDOW_WIDTH = 1000; /*! Width of the window. */
+	const int WINDOW_HEIGHT = 1000; /*! Height of the window. */
 	const int TARGET_FPS = 8; /*! The target FPS of the simulation. More accurately, this is the FPS Ceiling. */
 	const int CELL_SIZE = 5; /*! The size of the cell. Length of one side in pixels. Minimum of 2px*/
 
